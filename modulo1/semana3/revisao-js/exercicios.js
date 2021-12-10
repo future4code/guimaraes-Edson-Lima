@@ -144,6 +144,16 @@ function retornaChamadaDeFilme(filme) {
 // EXERCÍCIO 12
 function retornaPessoaAnonimizada(pessoa) {
    
+   let objeto = {
+      ...pessoa
+  }
+
+  return {
+      'nome': "ANÔNIMO",
+      'idade': objeto.idade,
+      'email': objeto.email,
+      'endereco': objeto.endereco
+  }
 }
 
 // EXERCÍCIO 13A

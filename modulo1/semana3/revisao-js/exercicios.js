@@ -65,7 +65,7 @@ function retornaObjetoEntreDoisNumeros(num1, num2) {
   }
   
   if (num1 > num2){
-     
+
       objeto.maiorNumero = num1;
 
       if ( num1 % num2 === 0){
@@ -97,7 +97,14 @@ function retornaObjetoEntreDoisNumeros(num1, num2) {
 
 // EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {
-   
+
+   let primeirosPares = [];
+    for (i= 0; primeirosPares.length < n ; i++) {
+        if (i % 2 == 0) {
+            primeirosPares.push(i);
+        }
+    }
+    return primeirosPares;
 }
 
 // EXERCÍCIO 09

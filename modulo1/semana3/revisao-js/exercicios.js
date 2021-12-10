@@ -24,8 +24,7 @@ function retornaArrayOrdenado(array) {
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
   let arrayPares = []
-  for (i=0;i < array.length;i++)
-  { 
+  for (i=0;i < array.length;i++){ 
      if (array[i] % 2 === 0)
      {
         arrayPares.push(array[i])
@@ -36,6 +35,7 @@ function retornaNumerosPares(array) {
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
+
    let arrayElevadosADois = [];
 
    for (i = 0; i < array.length; i++)
@@ -52,12 +52,47 @@ function retornaNumerosParesElevadosADois(array) {
 function retornaMaiorNumero(array) {
 
    return Math.max(...array)
-   
+
 }
 
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) {
 
+   let objeto = {
+      maiorNumero:'',
+      maiorDivisivelPorMenor:'',
+      diferenca:'',
+  }
+  
+  if (num1 > num2){
+     
+      objeto.maiorNumero = num1;
+
+      if ( num1 % num2 === 0){
+
+          objeto.maiorDivisivelPorMenor = true;
+      }
+      else{
+          objeto.maiorDivisivelPorMenor = false;
+      }
+          objeto.diferenca = num1 - num2;
+  }
+  else
+  {
+      objeto.maiorNumero = num2;
+
+      if (num2 % num1 === 0)
+      {
+          objeto.maiorDivisivelPorMenor = true;
+      }
+      else
+      {
+          objeto.maiorDivisivelPorMenor = false;
+      }
+          objeto.diferenca = num2 - num1;
+  }
+
+  return objeto;
 }
 
 // EXERCÍCIO 08

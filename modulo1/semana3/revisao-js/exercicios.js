@@ -169,7 +169,7 @@ function retornaPessoasAutorizadas(pessoas) {
 
 // EXERCÍCIO 13B
 function retornaPessoasNaoAutorizadas(pessoas) {
-   
+
    let naoAutorizadas = pessoas.filter((pessoa) => {
       return !(pessoa.idade > 14 && pessoa.idade < 60 && pessoa.altura > 1.5)
   })
@@ -180,7 +180,21 @@ function retornaPessoasNaoAutorizadas(pessoas) {
 
 // EXERCÍCIO 14
 function retornaContasComSaldoAtualizado(contas) {
+    
+   let somaCompras = undefined;
+    for (const conta of contas) {
+        somaCompras = conta.compras.reduce((soma, i) => {
+            soma += i
+            return soma
 
+        });
+        conta.saldoTotal -= somaCompras
+
+
+        conta.compras = []
+
+        return contas
+    }
 }
 
 // EXERCÍCIO 15A

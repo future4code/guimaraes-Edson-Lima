@@ -1,0 +1,10 @@
+fórmula para facilitar um planejamento em programação, passos fundamentais ensinados na aula de resolução de problemas,
+onde encontramos maneiras de clarear o esboço e ver de maneira diferente, os dois primeiros passos instruídos funcionam em conjunto,
+onde a importância de entender o que está descrito ao retirar as palavras relevantes, em seguida verificar as
+entradas e saídas o que ajuda muito obter certos tipos de respostas, em seguida a ideia de fazer um esquema
+visual é essencial para um programador, principalmente por que por trás de todos algorítimos e colunas de códigos existe uma 
+regra ou tema a se seguir, trajetória de eventos e mais. Os métodos código feio e força bruta são bem práticos, pois denotam
+agilidade e ajuda solucionar erros ou conflitos não vizualizados, testar o mesmo código separado de forma simplificada, dando uma ideia 
+geral sobre o que deve ser feito. E por fim o refatorar que induz você dar uma revisada nos 6 passos anteriores.
+
+

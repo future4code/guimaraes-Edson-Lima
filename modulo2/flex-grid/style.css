@@ -1,0 +1,52 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+header{
+    background-color: mediumvioletred;
+    display: flex;
+    justify-content: space-between;
+    padding:0 20px;
+    
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    background-color: lightgray;
+    flex-grow: 1;
+    
+}
+
+
+footer{
+    background-color: mediumvioletred;
+}
+
+nav{
+    background-color: burlywood;
+}
+
+section{
+    background-color: coral;
+    width: 100%;
+}
+
+
+
+#container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 20px;
+}
+
+.item {
+    background-image: url(image/image7.jpg);
+    border: 1px solid grey;
+    color: white;
+    border-radius: 10px;
+}

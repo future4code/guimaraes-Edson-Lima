@@ -59,3 +59,17 @@ footer > h1{
     margin-bottom: 250px;
     margin-top: 40px;
 }
+
+@media screen and (max-device-width: 800px) {
+    body{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blocos{
+        grid-template-columns: 1fr;
+    }
+    
+    .bloco1{
+      align-items: start;
+    }
+}

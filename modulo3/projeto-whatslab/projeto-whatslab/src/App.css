@@ -1,0 +1,19 @@
+*{
+  box-sizing:border-box;
+}
+
+body {
+  background-color: #d2dbdc;
+  margin: 0;
+  font-family: 'segoe UI', Arial, Helvetica, sans-serif;
+}
+
+.app-window {
+  display:flex;
+  height: 100vh;
+  background-color: #EDEDED;
+}
+
+.contentarea {
+  flex: 1;
+}

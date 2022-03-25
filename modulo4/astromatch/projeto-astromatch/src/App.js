@@ -1,24 +1,42 @@
-import logo from './logo.svg';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+import styled from 'styled-components'
 import './App.css';
+import CardPerfil from './components/CardPerfil';
+import Footer from './components/Footer';
+import Header from './components/Header';
 
-function App() {
+const Container=styled.div`
+width: 400px;
+height: 90vh;
+border: 1px solid black;
+`
+
+
+function App(props) {
+  const [usuario,setUsuario]=useState({})
+
+  useEffect(()=>{
+    getProfileToChoose()
+  },[])
+ const getProfileToChoose=()=>{
+   axios.get("https://us-central1-missao-newton.cloudfunctions.net/astroMatch/Edson-Lima/person"
+   ).then((response)=>{
+      setUsuario(response.data.profile)
+
+   }).catch((error)=>{
+     alert(error.response)
+
+   })
+
+ }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container >
+      <Header/>
+        <CardPerfil usuario={usuario}/>
+
+      <Footer/>
+    </Container>
   );
 }
 

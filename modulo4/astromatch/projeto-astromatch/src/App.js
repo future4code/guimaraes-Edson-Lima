@@ -10,7 +10,9 @@ const Container=styled.div`
 width: 400px;
 height: 90vh;
 border: 1px solid black;
+padding-left: 580px;
 `
+
 
 
 function App(props) {
@@ -39,5 +41,4 @@ function App(props) {
     </Container>
   );
 }
-
 export default App;

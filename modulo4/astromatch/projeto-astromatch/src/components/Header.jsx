@@ -1,8 +1,6 @@
 import React from "react";
 import styled from 'styled-components'
 import maches from '../img/maches.png'
-
-
 const Container=styled.header`
 padding: 10px;
 text-align: center;

@@ -1,9 +1,14 @@
-import React from "react";
+import './App.css';
+import Router from './router/Router';
+
+
+
 
 function App() {
   return (
-
-    <div>App js</div>
+    <div className="App">
+      <Router />
+    </div>
   );
 }
 

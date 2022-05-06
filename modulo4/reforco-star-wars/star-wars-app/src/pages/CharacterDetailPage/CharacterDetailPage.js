@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Image from '../assets/background-star-wars.jpg';
 
-const CharacterDetailPage = () => {
-  return (
-    <div>CharacterDetailPage</div>
-  )
+
+const Page = () => {
+    return (
+
+        <div>Detail Page</div>
+
+    );
 }
 
-export default CharacterDetailPage
+
+export default Page;

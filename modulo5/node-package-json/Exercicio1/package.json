@@ -1,0 +1,11 @@
+{
+    "name": "exercicio1",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "clear && node ./index.js"
+    },
+    "author": "Edson Lima",
+    "license": "ISC"
+  }

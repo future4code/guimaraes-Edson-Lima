@@ -1,0 +1,10 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 613px;
+  height: 660px;  
+  background-color: #f3f4f4;
+  background-image: url(/public/img/fnd.png);
+}
